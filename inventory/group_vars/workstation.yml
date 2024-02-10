@@ -1,0 +1,38 @@
+---
+######################################
+### giftpilz0.desktop.pdfgen
+
+pdfgen_document_path: /home/{{ user_username | default(ansible_user) }}/Dokumente/
+pdfgen_user: "{{ user_username | default(ansible_user) }}"
+
+######################################
+### giftpilz0.general.firewalld
+
+firewalld_zones_define:
+  - zone: work
+    source: 192.168.178.0/24
+
+firewalld_rules_services:
+  - service: ssh
+    zone: work
+    state: disabled
+
+######################################
+### giftpilz0.general.packages
+
+packages_additional_package:
+  - htop
+  - file-roller
+  - snapper
+  - keepassxc
+  - sqlite
+  - gitui
+  - nmap
+
+packages_python_package:
+  - pre-commit
+
+packages_rpmfusion_package_state: present
+
+packages_flatpak_repo_state: skip
+packages_flatpak_package: []

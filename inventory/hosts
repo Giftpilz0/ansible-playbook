@@ -1,0 +1,5 @@
+[server]
+# localhost ansible_user=
+
+[workstation]
+# localhost ansible_user=

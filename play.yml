@@ -1,0 +1,53 @@
+---
+######################################
+### vars
+
+- name: Talk to all hosts just so we can learn about them
+  hosts: all
+
+  vars_prompt:
+    - name: user_username
+      prompt: Select username
+      private: false
+
+    - name: user_password
+      prompt: Select password
+      private: true
+      confirm: true
+      unsafe: true
+
+  tasks:
+    - name: Set facts
+      ansible.builtin.set_fact:
+        user_username: "{{ user_username }}"
+        user_password: "{{ user_password }}"
+
+######################################
+### roles
+
+- name: Configure hosts - common
+  hosts: all
+  roles:
+    - role: giftpilz0.general.update
+    - role: giftpilz0.general.dnf
+    - role: giftpilz0.general.firewalld
+    - role: giftpilz0.general.packages
+    - role: giftpilz0.general.timezone
+    - role: giftpilz0.general.user
+    - role: giftpilz0.general.git
+
+- name: Configure hosts - server
+  hosts: server
+  roles:
+    - role: giftpilz0.server.podman
+    - role: giftpilz0.server.cockpit
+
+- name: Configure hosts - workstation
+  hosts: workstation
+  roles:
+    - role: giftpilz0.general.dotfiles
+    - role: giftpilz0.desktop.pdfgen
+    - role: giftpilz0.private.dconf
+    - role: giftpilz0.private.libreoffice
+    - role: giftpilz0.private.printer
+    - role: giftpilz0.private.windowsfonts

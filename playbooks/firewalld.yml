@@ -1,0 +1,14 @@
+---
+######################################
+### vars
+
+- name: Talk to all hosts just so we can learn about them
+  hosts: all
+
+######################################
+### roles
+
+- name: Execute role - firewalld
+  hosts: all
+  roles:
+    - role: giftpilz0.general.firewalld
