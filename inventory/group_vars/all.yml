@@ -14,6 +14,14 @@ git_config_system:
   - key: gpg.program
     value: /usr/bin/gpg
 
+git_config:
+  - key: user.name
+    value: ""
+    scope: global
+  - key: user.email
+    value: ""
+    scope: global
+
 ######################################
 ### giftpilz0.general.timezone
 
