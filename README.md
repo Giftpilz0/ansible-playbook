@@ -1,10 +1,16 @@
-# How to get started?
+# Ansible Playbooks
+
+![Ansible-Lint](https://github.com/giftpilz0/ansible-collection-general/actions/workflows/ci.yml/badge.svg)
+
+Variables are documented here:
+<https://giftpilz0.nixpi.de/docs/category/ansible-1>
+
+______________________________________________________________________
+
+## How to get started?
 
 Edit the variables (`inventory/group_vars/`)
 Edit the inventory (`inventory/hosts`)
-
-The variables are documented here:
-<https://giftpilz0.github.io/projectdocs/ansible/>
 
 ```bash
 ansible-playbook play.yml --limit workstation
