@@ -36,12 +36,6 @@
     - role: giftpilz0.general.user
     - role: giftpilz0.general.git
 
-- name: Configure hosts - server
-  hosts: server
-  roles:
-    - role: giftpilz0.server.podman
-    - role: giftpilz0.server.cockpit
-
 - name: Configure hosts - workstation
   hosts: workstation
   roles:
