@@ -21,13 +21,24 @@ firewalld_rules_services:
 ### giftpilz0.general.packages
 
 packages_additional_package:
-  - htop
+  - SwayNotificationCenter
+  - bat
+  - brightnessctl
+  - eza
   - file-roller
-  - snapper
-  - keepassxc
-  - sqlite
   - gitui
+  - htop
+  - hypridle
+  - hyprland
+  - hyprlock
+  - hyprpaper
+  - keepassxc
+  - kitty
   - nmap
+  - playerctl
+  - snapper
+  - sqlite
+  - wofi
 
 packages_python_package:
   - pre-commit
