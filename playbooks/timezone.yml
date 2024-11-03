@@ -2,13 +2,13 @@
 ######################################
 ### vars
 
-- name: Talk to all hosts just so we can learn about them
-  hosts: all
+- name: Talk to localhosts just so we can learn about them
+  hosts: localhost
 
 ######################################
 ### roles
 
 - name: Execute role - timezone
-  hosts: all
+  hosts: localhost
   roles:
     - role: giftpilz0.general.timezone
