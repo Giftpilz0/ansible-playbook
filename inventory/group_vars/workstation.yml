@@ -47,5 +47,3 @@ packages_python_package:
 packages_rpmfusion_package_state: present
 
 packages_flatpak_repo_state: present
-packages_flatpak_package:
-  - dev.zed.Zed
