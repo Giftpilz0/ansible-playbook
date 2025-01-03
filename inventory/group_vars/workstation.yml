@@ -24,7 +24,6 @@ packages_additional_package:
   - SwayNotificationCenter
   - bat
   - brightnessctl
-  - eza
   - file-roller
   - gitui
   - htop
