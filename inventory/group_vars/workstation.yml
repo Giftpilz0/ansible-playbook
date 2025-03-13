@@ -21,28 +21,34 @@ firewalld_rules_services:
 ### giftpilz0.general.packages
 
 packages_additional_package:
-  - SwayNotificationCenter
   - bat
-  - brightnessctl
-  - file-roller
   - gitui
   - htop
-  - hypridle
-  - hyprland
-  - hyprlock
   - hx
-  - hyprpaper
   - keepassxc
-  - kitty
   - nmap
-  - playerctl
   - snapper
   - sqlite
-  - wofi
+  - waypipe
+  - zstd
+  - brightnessctl # applications for windowmanager
+  - fontawesome-fonts-all #
+  - hypridle #
+  - hyprland #
+  - hyprlock #
+  - hyprpaper #
+  - kitty #
+  - libdbusmenu-gtk3 #
+  - mate-polkit #
+  - pavucontrol #
+  - playerctl #
+  - SwayNotificationCenter #
+  - wofi #
+  - xdg-desktop-portal-hyprland #
 
 packages_python_package:
   - pre-commit
 
-packages_rpmfusion_package_state: present
+packages_rpmfusion_package_state: skip
 
-packages_flatpak_repo_state: present
+packages_flatpak_repo_state: skip

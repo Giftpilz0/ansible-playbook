@@ -41,7 +41,6 @@
   hosts: workstation
   roles:
     - role: giftpilz0.general.dotfiles
-    - role: giftpilz0.desktop.pdfgen
     - role: giftpilz0.private.dconf
     - role: giftpilz0.private.libreoffice
     - role: giftpilz0.private.printer
