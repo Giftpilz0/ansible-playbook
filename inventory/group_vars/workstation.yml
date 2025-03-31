@@ -21,7 +21,15 @@ firewalld_rules_services:
 ### giftpilz0.general.packages
 
 packages_additional_package:
-  - bat
+  - "@base-graphical" # groups
+  - "@firefox"
+  - "@fonts"
+  - "@hardware-support"
+  - "@multimedia"
+  - "@networkmanager-submodules"
+  - ansible # misc
+  - distribution-gpg-keys
+  - git
   - gitui
   - htop
   - hx
@@ -29,22 +37,22 @@ packages_additional_package:
   - nmap
   - snapper
   - sqlite
+  - tar
   - waypipe
   - zstd
-  - brightnessctl # applications for windowmanager
-  - fontawesome-fonts-all #
-  - hypridle #
-  - hyprland #
-  - hyprlock #
-  - hyprpaper #
-  - kitty #
-  - libdbusmenu-gtk3 #
-  - mate-polkit #
-  - pavucontrol #
-  - playerctl #
-  - SwayNotificationCenter #
-  - wofi #
-  - xdg-desktop-portal-hyprland #
+  - SwayNotificationCenter # applications for windowmanager
+  - brightnessctl
+  - fontawesome-fonts-all
+  - hypridle
+  - hyprland
+  - hyprlock
+  - hyprpaper
+  - kitty
+  - libdbusmenu-gtk3
+  - mate-polkit
+  - playerctl
+  - wofi
+  - xdg-desktop-portal-hyprland
 
 packages_python_package:
   - pre-commit
