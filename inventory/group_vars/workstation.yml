@@ -28,12 +28,15 @@ packages_additional_package:
   - "@multimedia"
   - "@networkmanager-submodules"
   - ansible # misc
+  - bolt
   - distribution-gpg-keys
   - git
   - gitui
   - htop
-  - hx
+  - helix
   - keepassxc
+  - NetworkManager-openconnect
+  - NetworkManager-tui
   - nmap
   - snapper
   - sqlite

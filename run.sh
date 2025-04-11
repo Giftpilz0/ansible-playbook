@@ -1,6 +1,6 @@
 #!/bin/bash
 
-packages=("ansible" "python3-rpm" "git" "tar")
+packages=("ansible" "python3-rpm" "git" "tar" "python3-dnf")
 
 check_installed() {
     rpm -q "$1" >/dev/null 2>&1
