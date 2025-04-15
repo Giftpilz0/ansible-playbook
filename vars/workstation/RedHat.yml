@@ -1,0 +1,45 @@
+---
+######################################
+### giftpilz0.general.packages
+
+packages_additional_package:
+  - "@base-graphical" # meta
+  - "@firefox"
+  - "@fonts"
+  - "@hardware-support"
+  - "@multimedia"
+  - "@networkmanager-submodules"
+  - ansible # misc
+  - bolt
+  - distribution-gpg-keys
+  - git
+  - gitui
+  - helix
+  - htop
+  - keepassxc
+  - NetworkManager-openconnect
+  - NetworkManager-tui
+  - nmap
+  - snapper
+  - sqlite
+  - tar
+  - waypipe
+  - zstd
+  - brightnessctl # applications for windowmanager
+  - fontawesome-fonts-all
+  - hypridle
+  - hyprland
+  - hyprlock
+  - hyprpaper
+  - hyprpolkitagent
+  - kitty
+  - libdbusmenu-gtk3
+  - playerctl
+  - SwayNotificationCenter
+  - wofi
+  - xdg-desktop-portal-hyprland
+
+packages_rpmfusion_package_state: skip
+
+packages_copr_repo_name: solopasha/hyprland
+packages_copr_repo_state: enabled

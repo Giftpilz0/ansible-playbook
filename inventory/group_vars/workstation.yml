@@ -20,49 +20,7 @@ firewalld_rules_services:
 ######################################
 ### giftpilz0.general.packages
 
-packages_additional_package:
-  - "@base-graphical" # groups
-  - "@firefox"
-  - "@fonts"
-  - "@hardware-support"
-  - "@multimedia"
-  - "@networkmanager-submodules"
-  - ansible # misc
-  - bolt
-  - distribution-gpg-keys
-  - git
-  - gitui
-  - htop
-  - helix
-  - keepassxc
-  - NetworkManager-openconnect
-  - NetworkManager-tui
-  - nmap
-  - snapper
-  - sqlite
-  - tar
-  - waypipe
-  - zstd
-  - SwayNotificationCenter # applications for windowmanager
-  - brightnessctl
-  - fontawesome-fonts-all
-  - hypridle
-  - hyprland
-  - hyprlock
-  - hyprpaper
-  - hyprpolkitagent
-  - kitty
-  - libdbusmenu-gtk3
-  - playerctl
-  - wofi
-  - xdg-desktop-portal-hyprland
-
 packages_python_package:
   - pre-commit
 
-packages_rpmfusion_package_state: skip
-
 packages_flatpak_repo_state: skip
-
-packages_copr_repo_name: solopasha/hyprland
-packages_copr_repo_state: enabled

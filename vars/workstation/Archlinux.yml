@@ -1,0 +1,42 @@
+---
+######################################
+### giftpilz0.general.packages
+
+packages_additional_package:
+  - base # meta
+  - gst-libav
+  - gst-plugins-bad
+  - gst-plugins-good
+  - linux
+  - linux-firmware
+  - mesa
+  - networkmanager
+  - systemd
+  - ansible # misc
+  - bolt
+  - distribution-gpg-keys
+  - firefox
+  - git
+  - gitui
+  - helix
+  - htop
+  - keepassxc
+  - networkmanager-openconnect
+  - nmap
+  - snapper
+  - sqlite
+  - tar
+  - waypipe
+  - zstd
+  - brightnessctl # applications for windowmanager
+  - hypridle
+  - hyprland
+  - hyprlock
+  - hyprpaper
+  - hyprpolkitagent
+  - kitty
+  - libdbusmenu-gtk3
+  - playerctl
+  - swaync
+  - wofi
+  - xdg-desktop-portal-hyprland
