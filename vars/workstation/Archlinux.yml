@@ -20,6 +20,7 @@ packages_additional_package:
   - gitui
   - helix
   - htop
+  - jq
   - keepassxc
   - networkmanager-openconnect
   - nmap
