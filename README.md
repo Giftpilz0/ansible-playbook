@@ -15,9 +15,3 @@ Edit the inventory (`inventory/hosts`)
 ```bash
 ansible-playbook play.yml --limit workstation
 ```
-
-## Only pull dotfiles
-
-```bash
-ansible-pull -U https://github.com/Giftpilz0/ansible-playbook playbooks/dotfiles.yml --connection local -e "ansible_user=$USER"
-```

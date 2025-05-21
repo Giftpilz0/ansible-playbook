@@ -22,22 +22,25 @@ packages_additional_package:
   - htop
   - jq
   - keepassxc
+  - nautilus
   - networkmanager-openconnect
   - nmap
   - snapper
   - sqlite
   - tar
+  - tuned
   - waypipe
   - zstd
   - brightnessctl # applications for windowmanager
+  - gnome-keyring
   - hypridle
-  - hyprland
   - hyprlock
   - hyprpaper
   - hyprpolkitagent
   - kitty
   - libdbusmenu-gtk3
+  - niri
   - playerctl
   - swaync
   - wofi
-  - xdg-desktop-portal-hyprland
+  - xdg-desktop-portal-gnome
