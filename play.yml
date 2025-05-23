@@ -56,7 +56,6 @@
       when:
         - ansible_os_family == "RedHat"
 
-- name: Configure hosts - workstation
-  hosts: workstation
-  roles:
-    - role: giftpilz0.general.dotfiles
+# - name: Configure hosts - workstation
+#   hosts: workstation
+#   roles:
