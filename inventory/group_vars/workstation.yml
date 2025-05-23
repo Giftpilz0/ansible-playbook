@@ -11,6 +11,7 @@ pdfgen_user: "{{ user_username | default(ansible_user) }}"
 firewalld_zones_define:
   - zone: work
     source: 192.168.10.0/24
+    target: DROP
 
 firewalld_rules_services:
   - service: ssh
