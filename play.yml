@@ -50,8 +50,8 @@
 - name: Configure hosts - RedHat
   hosts: all
   tasks:
-    - name: "include redhat"
-      include_role:
+    - name: "Include redhat"
+      ansible.builtin.include_role:
         name: giftpilz0.general.dnf
       when:
         - ansible_os_family == "RedHat"

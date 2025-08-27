@@ -30,8 +30,21 @@ timezone_timezone: Europe/Berlin
 ######################################
 ### giftpilz0.general.user
 
-# user_username: "{{ ansible_user }}"
-user_groups: wheel
-# user_password:
-user_home: true
-user_shell: /bin/bash
+admin_group: "{{ 'wheel' if ansible_os_family == 'RedHat' else 'sudo' }}"
+
+user_key_target_users: []
+
+user:
+  - user_username: "{{ user_username }}"
+    user_groups:
+      - "{{ admin_group }}"
+      - "{{ user_username }}"
+    user_home: true
+    user_shell: "/bin/bash"
+    user_comment: "{{ user_username }}"
+    user_install_key_to_targets: false
+    user_sudo_pwless: false
+    user_state: present
+    user_password: "{{ user_password }}"
+    user_pub:
+      - "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOAhl7NUVzPjYfk/rB+dS0i6wDPkB5EtlZSfVwGdrWsg"
