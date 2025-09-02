@@ -52,7 +52,7 @@
   tasks:
     - name: "Include redhat"
       ansible.builtin.include_role:
-        name: giftpilz0.general.dnf
+        name: giftpilz0.general.autoupgrade
       when:
         - ansible_os_family == "RedHat"
 
