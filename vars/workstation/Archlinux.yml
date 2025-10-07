@@ -44,3 +44,4 @@ packages_additional_package:
   - swaync
   - wofi
   - xdg-desktop-portal-gnome
+  - xwayland-satellite
