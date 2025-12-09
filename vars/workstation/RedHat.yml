@@ -12,7 +12,7 @@ packages_additional_package:
   - ansible # misc
   - bolt
   - distribution-gpg-keys
-  - git
+  - git-core
   - gitui
   - helix
   - htop
@@ -29,20 +29,17 @@ packages_additional_package:
   - brightnessctl # applications for windowmanager
   - fontawesome-fonts-all
   - gnome-keyring
+  - google-noto-emoji-fonts
   - kitty
   - libdbusmenu-gtk3
+  - material-icons-fonts
   - playerctl
-  - SwayNotificationCenter
   - wofi
   - xdg-desktop-portal-gnome
   - xwayland-satellite
-  - eww-git # copr
-  - hypridle
-  - hyprlock
-  - hyprpaper
-  - hyprpolkitagent
-  - matugen-git
+  - matugen-git # copr
   - niri-git
+  - quickshell-git
   - waypipe-git
   - yolk-git
 

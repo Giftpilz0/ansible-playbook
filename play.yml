@@ -54,7 +54,7 @@
       ansible.builtin.include_role:
         name: giftpilz0.general.autoupgrade
       when:
-        - ansible_os_family == "RedHat"
+        - ansible_os_family == "RedHat" or ansible_os_family == "Debian"
 
 # - name: Configure hosts - workstation
 #   hosts: workstation
