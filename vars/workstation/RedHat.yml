@@ -31,9 +31,9 @@ packages_additional_package:
   - gnome-keyring
   - google-noto-emoji-fonts
   - kitty
-  - libdbusmenu-gtk3
   - material-icons-fonts
   - playerctl
+  - power-profiles-daemon
   - wofi
   - xdg-desktop-portal-gnome
   - xwayland-satellite
